@@ -1,0 +1,33 @@
+dependencies:
+  espressif/button:
+    component_hash: d4b402da2727b8bb39c4f5f334a6b33ab37260ee430f2a6bf76d6dbb0115df79
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 2.3.0
+  espressif/esp_secure_cert_mgr:
+    component_hash: 3f53363fbfcf8ce2a3832ade05aeac854a10830f9f571929fb7197eeac5b1031
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 2.0.8
+  espressif/json_parser:
+    component_hash: 2130029a8c005ba12476c5b5ae5c1c4589cb0c171f8100644d1ab883434eb91f
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 1.0.0
+  espressif/led_strip:
+    component_hash: a7d4d67931d61dd2b6f27e681e2e6df45fa70eb0de9b422178930330b2dc1846
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 1.1.0-alpha
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 4.4.2
+manifest_hash: 836ffacc9a6420a5f4d1f5f201fca0d6306f89f140606e45c2bf1717f9696189
+target: esp32c3
+version: 1.0.0
