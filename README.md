@@ -11,7 +11,8 @@ matter QQ交流群：723997544
 
 # 前提
 已经安装esp-idf esp-matter
-如果没有安装也可直接少些release的bin文件
+
+如果没有安装也可直接烧写release的bin文件
 
 
 # 如何使用
