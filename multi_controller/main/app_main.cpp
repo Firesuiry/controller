@@ -45,6 +45,7 @@ uint16_t onoff_plug_endpoint_id0 = 0;
 uint16_t onoff_plug_endpoint_id1 = 0;
 uint16_t dimmable_plug_endpoint_id0 = 0;
 uint16_t dimmable_plug_endpoint_id1 = 0;
+uint16_t contact_senser_endpoint_id = 0;
 
 
 
@@ -217,6 +218,8 @@ static void IRAM_ATTR gpio_isr_handler(void* arg)
 {
     uint32_t gpio_num = (uint32_t) arg;
     printf("GPIO[%d] intr, val: %d\n", gpio_num, gpio_get_level((gpio_num_t)gpio_num));
+    esp_matter_attr_val_t val = esp_matter_bool(gpio_get_level((gpio_num_t)gpio_num));
+    ESP_ERROR_CHECK(attribute::update(contact_senser_endpoint_id, BooleanState::Id, BooleanState::Attributes::StateValue::Id, &val));
 }
 
 static void contact_sensor_init(void)
@@ -339,7 +342,7 @@ extern "C" void app_main()
 
     dimmable_plug_pwm_init();
     onoff_plug_init();
-    // contact_sensor_init();
+    contact_sensor_init();
 
 
     /* Matter start */

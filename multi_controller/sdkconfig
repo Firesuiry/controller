@@ -1521,13 +1521,6 @@ CONFIG_ESP_MATTER_CONSOLE_MAX_COMMANDS=10
 # end of ESP Matter Controller
 
 #
-# ESP Secure Cert Manager
-#
-# CONFIG_ESP_SECURE_CERT_DS_PERIPHERAL is not set
-# CONFIG_ESP_SECURE_CERT_SUPPORT_LEGACY_FORMATS is not set
-# end of ESP Secure Cert Manager
-
-#
 # IoT Button
 #
 CONFIG_BUTTON_PERIOD_TIME_MS=20
@@ -1539,6 +1532,13 @@ CONFIG_ADC_BUTTON_MAX_CHANNEL=3
 CONFIG_ADC_BUTTON_MAX_BUTTON_PER_CHANNEL=8
 CONFIG_ADC_BUTTON_SAMPLE_TIMES=1
 # end of IoT Button
+
+#
+# ESP Secure Cert Manager
+#
+# CONFIG_ESP_SECURE_CERT_DS_PERIPHERAL is not set
+# CONFIG_ESP_SECURE_CERT_SUPPORT_LEGACY_FORMATS is not set
+# end of ESP Secure Cert Manager
 # end of Component config
 
 #
